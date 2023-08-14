@@ -1,3 +1,469 @@
 main {
-    flex-grow: 1;
+  flex-grow: 1;
 }
+
+.main__container {
+  padding-top: 8.8rem;
+}
+
+.main__link {
+  font-family: $body-ff;
+  color: $white-color;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.6; /* 162.5% */
+  padding-top: 6.6rem;
+  padding-bottom: 25rem;
+
+  &:hover {
+    color: $green-color;
+  }
+
+  &__hr {
+    color: $green-color;
+  }
+}
+
+.frontent__container {
+  padding-top: 1.4rem;
+}
+
+.frontent__list {
+  display: flex;
+}
+.frontent__item {
+  width: 100%;
+  max-width: 345px;
+  margin-right: 3.5rem;
+}
+
+.frontent__title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: -1.5px;
+  text-align: left;
+  padding-top: 5.8rem;
+}
+.frontent__description {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.project__container {
+  padding-top: 14rem;
+}
+
+.project__item {
+  padding-top: 8rem;
+}
+
+.project__table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project__man {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.project__mi {
+  font-size: 88px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -2.5px;
+  text-align: left;
+}
+
+.project__content {
+  color: $white-color;
+
+  &:hover {
+    color: $green-color;
+  }
+
+  &__hr {
+    width: 105px;
+    color: $green-color;
+  }
+}
+
+.project__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project__box {
+  width: 540px;
+  height: 400px;
+  background-image: url("../images/haha1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project__href {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 4.8rem;
+  display: none;
+  a {
+    color: $white-color;
+    text-decoration: none;
+    position: relative;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+
+  a:after {
+    display: inline-block;
+    content: "";
+    width: 0;
+    position: absolute;
+    height: 2px;
+    background-color: $green-color;
+    bottom: -1rem;
+    left: 0;
+    transition: 0.3s;
+  }
+
+  a:hover {
+    color: $green-color;
+  }
+
+  a:hover::after {
+    width: 100%;
+  }
+}
+
+.project__box:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("../images/haha1.png");
+}
+
+.project__box:hover .project__href {
+  display: flex;
+}
+
+.project__item1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project__box1 {
+  width: 540px;
+  height: 400px;
+  background-image: url("../images/haah2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project__href1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 4.8rem;
+  display: none;
+  a {
+    color: $white-color;
+    text-decoration: none;
+    position: relative;
+  }
+
+  a:after {
+    display: inline-block;
+    content: "";
+    width: 0;
+    position: absolute;
+    height: 2px;
+    background-color: $green-color;
+    bottom: -1rem;
+    left: 0;
+    transition: 0.3s;
+  }
+
+  a:hover {
+    color: $green-color;
+  }
+
+  a:hover::after {
+    width: 100%;
+  }
+}
+
+.project__box1:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("../images/haah2.png");
+}
+
+.project__box1:hover .project__href1 {
+  display: flex;
+}
+
+.project__item2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project__box2 {
+  width: 540px;
+  height: 400px;
+  background-image: url("../images/haha3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project__href2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 4.8rem;
+  display: none;
+  a {
+    color: $white-color;
+    text-decoration: none;
+    position: relative;
+  }
+
+  a:after {
+    display: inline-block;
+    content: "";
+    width: 0;
+    position: absolute;
+    height: 2px;
+    background-color: $green-color;
+    bottom: -1rem;
+    left: 0;
+    transition: 0.3s;
+  }
+
+  a:hover {
+    color: $green-color;
+  }
+
+  a:hover::after {
+    width: 100%;
+  }
+}
+
+.project__box2:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("../images/haha3.png");
+}
+
+.project__box2:hover .project__href2 {
+  display: flex;
+}
+
+.project__item3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project__box3 {
+  width: 540px;
+  height: 400px;
+  background-image: url("../images/haha4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project__href3 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 4.8rem;
+  display: none;
+  a {
+    color: $white-color;
+    text-decoration: none;
+    position: relative;
+  }
+
+  a:after {
+    display: inline-block;
+    content: "";
+    width: 0;
+    position: absolute;
+    height: 2px;
+    background-color: $green-color;
+    bottom: -1rem;
+    left: 0;
+    transition: 0.3s;
+  }
+
+  a:hover {
+    color: $green-color;
+  }
+
+  a:hover::after {
+    width: 100%;
+  }
+}
+
+.project__box3:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("../images/haha4.png");
+}
+
+.project__box3:hover .project__href3 {
+  display: flex;
+}
+
+.project__item4 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project__box4 {
+  width: 540px;
+  height: 400px;
+  background-image: url("../images/haha5.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project__href4 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 4.8rem;
+  display: none;
+  a {
+    color: $white-color;
+    text-decoration: none;
+    position: relative;
+  }
+
+  a:after {
+    display: inline-block;
+    content: "";
+    width: 0;
+    position: absolute;
+    height: 2px;
+    background-color: $green-color;
+    bottom: -1rem;
+    left: 0;
+    transition: 0.3s;
+  }
+
+  a:hover {
+    color: $green-color;
+  }
+
+  a:hover::after {
+    width: 100%;
+  }
+}
+
+.project__box4:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("../images/haha5.png");
+}
+
+.project__box4:hover .project__href4 {
+  display: flex;
+}
+
+.project__item5 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project__box5 {
+  width: 540px;
+  height: 400px;
+  background-image: url("../images/haha6.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project__href5 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 4.8rem;
+  display: none;
+  a {
+    color: $white-color;
+    text-decoration: none;
+    position: relative;
+  }
+
+  a:after {
+    display: inline-block;
+    content: "";
+    width: 0;
+    position: absolute;
+    height: 2px;
+    background-color: $green-color;
+    bottom: -1rem;
+    left: 0;
+    transition: 0.3s;
+  }
+
+  a:hover {
+    color: $green-color;
+  }
+
+  a:hover::after {
+    width: 100%;
+  }
+}
+
+.project__box5:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("../images/haha6.png");
+}
+
+.project__box5:hover .project__href5 {
+  display: flex;
+}
+
+.project__type {
+  font-family: Space Grotesk;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: left;
+
+  .project__description {
+    display: flex;
+    padding-top: 7px;
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: left;
+    gap: 1.8rem;
+    padding-bottom: 6.9rem;
+  }
+
+  h4 {
+    padding-top: 2rem;
+  }
+}
+

@@ -1,4 +1,4 @@
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* ! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -73,7 +73,7 @@ abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -153,7 +153,8 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -162,7 +163,8 @@ input { /* 1 */
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
@@ -170,9 +172,9 @@ select { /* 1 */
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
@@ -180,9 +182,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -191,9 +193,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -237,8 +239,8 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type=checkbox],
-[type=radio] {
+[type="checkbox"],
+[type="radio"] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
@@ -246,8 +248,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -255,7 +257,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type=search] {
+[type="search"] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
@@ -263,7 +265,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type=search]::-webkit-search-decoration {
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -306,4 +308,845 @@ template {
  */
 [hidden] {
   display: none;
-}/*# sourceMappingURL=style.css.map */
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+img {
+  display: flex;
+  -o-object-fit: cover;
+  object-fit: cover; /* contain */
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #151515;
+  color: #ffffff;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16.5rem;
+  padding-right: 16.5rem;
+}
+
+/* space-grotesk-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/space-grotesk-v15-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* space-grotesk-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/space-grotesk-v15-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* space-grotesk-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/space-grotesk-v15-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+.header__container {
+  align-items: center;
+  padding-top: 3.9rem;
+  padding-bottom: 3.9rem;
+}
+
+.site__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site__name {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+}
+
+.sitenav {
+  max-width: 192.49px;
+}
+
+.sitenav__list {
+  display: flex;
+  gap: 3.2rem;
+  margin-right: 29.5px;
+}
+.sitenav__list li {
+  width: 24px;
+  height: 24px;
+}
+.sitenav__list li a {
+  margin-left: -29.5px;
+}
+
+.hero {
+  padding-top: 12.7rem;
+  display: flex;
+}
+
+.hero__title {
+  display: flex;
+}
+
+.hero__list {
+  flex-direction: column;
+}
+.hero__list h2 {
+  width: 70.9rem;
+  font-family: Space Grotesk;
+  font-size: 88px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -2.5px;
+  text-align: left;
+}
+.hero__list a {
+  color: #ffffff;
+}
+.hero__list a hr {
+  color: #4ee1a0;
+}
+.hero__list a:hover {
+  color: #4ee1a0;
+}
+
+.hero__adam {
+  font-family: Space Grotesk;
+  font-size: 88px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -2.5px;
+  text-align: left;
+  display: flex;
+  gap: 1.7rem;
+}
+
+.hero__hr {
+  max-width: 492px;
+  margin-left: 13.7rem;
+  background-color: #4ee1a0;
+  flex-shrink: 0;
+  height: 6px;
+  border: none;
+}
+
+.hero__description {
+  width: 44.5rem;
+  padding-top: 4.3rem;
+  font-family: Space Grotesk;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+  padding-bottom: 6.6rem;
+}
+
+.hero__image {
+  display: flex;
+  width: 44.5rem;
+  height: 720px;
+  flex-shrink: 0;
+  background-color: #242424;
+  position: relative;
+  z-index: -1;
+  margin-top: -200px;
+  margin-left: -45px;
+}
+.hero__image .site__img {
+  position: absolute;
+  z-index: 1;
+  bottom: -1px;
+  bottom: 0;
+}
+.hero__image .circle__picture {
+  position: absolute;
+  bottom: 10.9rem;
+  left: -64.5px;
+  z-index: 1;
+}
+
+.footer {
+  background-color: #242424;
+}
+
+.footer__container {
+  padding-top: 8.4rem;
+}
+
+.footer__icon {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5.1rem;
+  padding-bottom: 9.5rem;
+}
+
+.last__footer {
+  font-family: Space Grotesk;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: left;
+}
+
+.ul__list {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.message__container {
+  background-color: #242424;
+  padding-top: 8.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.message__left {
+  padding-right: 22rem;
+}
+
+.message__contact {
+  font-family: Space Grotesk;
+  font-size: 88px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -2.5px;
+}
+
+.message__description {
+  font-family: Space Grotesk;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+  width: 44.5rem;
+  padding-top: 3.6rem;
+  padding-bottom: 22.1rem;
+}
+
+.contact__message {
+  padding-top: 3.2rem;
+  padding-left: 32.5rem;
+}
+.contact__message a {
+  font-family: Space Grotesk;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.625;
+  text-align: left;
+  color: #fff;
+}
+.contact__message a:hover {
+  color: #4ee1a0;
+}
+
+.contact__hr {
+  width: 12rem;
+  height: 0.3rem;
+  background-color: #4ee1a0;
+  border: none;
+}
+
+.link__hr {
+  width: 44.5rem;
+  color: #ffffff;
+}
+
+.message__link {
+  font-family: Space Grotesk;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+  color: #d9d9d9;
+  padding-top: 3.2rem;
+  padding-bottom: 1.6rem;
+  display: block;
+  color: #ffffff;
+}
+.message__link1 {
+  color: #d9d9d9;
+  padding-top: 3.2rem;
+  color: #ffffff;
+  padding-bottom: 8.1rem;
+}
+
+.message__link:first-child {
+  padding-top: 1rem;
+}
+
+.message__container {
+  background-color: #242424;
+  padding-top: 8.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.message__left {
+  padding-right: 22rem;
+}
+
+.message__contact {
+  font-family: Space Grotesk;
+  font-size: 88px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -2.5px;
+}
+
+.message__description {
+  font-family: Space Grotesk;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+  width: 44.5rem;
+  padding-top: 3.6rem;
+  padding-bottom: 22.1rem;
+}
+
+.contact__message {
+  padding-top: 3.2rem;
+}
+.contact__message a {
+  font-family: Space Grotesk;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.625;
+  text-align: left;
+  color: #fff;
+}
+.contact__message a:hover {
+  color: #4ee1a0;
+}
+
+.contact__hr {
+  width: 12rem;
+  height: 0.3rem;
+  background-color: #4ee1a0;
+  border: none;
+}
+
+.link__hr {
+  width: 44.5rem;
+  color: #ffffff;
+}
+
+.message__link {
+  font-family: Space Grotesk;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+  color: #fff;
+  padding-top: 3.2rem;
+  padding-bottom: 1.6rem;
+  display: block;
+  color: #ffffff;
+}
+.message__link1 {
+  padding-top: 3.2rem;
+  color: #ffffff;
+  padding-bottom: 8.1rem;
+}
+
+.message__link:first-child {
+  padding-top: 1rem;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.main__container {
+  padding-top: 8.8rem;
+}
+
+.main__link {
+  font-family: "Space Grotesk", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.6; /* 162.5% */
+  padding-top: 6.6rem;
+  padding-bottom: 25rem;
+}
+.main__link:hover {
+  color: #4ee1a0;
+}
+.main__link__hr {
+  color: #4ee1a0;
+}
+
+.frontent__container {
+  padding-top: 1.4rem;
+}
+
+.frontent__list {
+  display: flex;
+}
+
+.frontent__item {
+  width: 100%;
+  max-width: 345px;
+  margin-right: 3.5rem;
+}
+
+.frontent__title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: -1.5px;
+  text-align: left;
+  padding-top: 5.8rem;
+}
+
+.frontent__description {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.project__container {
+  padding-top: 14rem;
+}
+
+.project__item {
+  padding-top: 8rem;
+}
+
+.project__table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project__man {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.project__mi {
+  font-size: 88px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -2.5px;
+  text-align: left;
+}
+
+.project__content {
+  color: #ffffff;
+}
+.project__content:hover {
+  color: #4ee1a0;
+}
+.project__content__hr {
+  width: 105px;
+  color: #4ee1a0;
+}
+
+.project__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project__box {
+  width: 540px;
+  height: 400px;
+  background-image: url("../images/haha1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project__href {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 4.8rem;
+  display: none;
+}
+.project__href a {
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  line-height: 1.6;
+  font-size: 16px;
+}
+.project__href a:after {
+  display: inline-block;
+  content: "";
+  width: 0;
+  position: absolute;
+  height: 2px;
+  background-color: #4ee1a0;
+  bottom: -1rem;
+  left: 0;
+  transition: 0.3s;
+}
+.project__href a:hover {
+  color: #4ee1a0;
+}
+.project__href a:hover::after {
+  width: 100%;
+}
+
+.project__box:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("../images/haha1.png");
+}
+
+.project__box:hover .project__href {
+  display: flex;
+}
+
+.project__item1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project__box1 {
+  width: 540px;
+  height: 400px;
+  background-image: url("../images/haah2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project__href1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 4.8rem;
+  display: none;
+}
+.project__href1 a {
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+}
+.project__href1 a:after {
+  display: inline-block;
+  content: "";
+  width: 0;
+  position: absolute;
+  height: 2px;
+  background-color: #4ee1a0;
+  bottom: -1rem;
+  left: 0;
+  transition: 0.3s;
+}
+.project__href1 a:hover {
+  color: #4ee1a0;
+}
+.project__href1 a:hover::after {
+  width: 100%;
+}
+
+.project__box1:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("../images/haah2.png");
+}
+
+.project__box1:hover .project__href1 {
+  display: flex;
+}
+
+.project__item2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project__box2 {
+  width: 540px;
+  height: 400px;
+  background-image: url("../images/haha3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project__href2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 4.8rem;
+  display: none;
+}
+.project__href2 a {
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+}
+.project__href2 a:after {
+  display: inline-block;
+  content: "";
+  width: 0;
+  position: absolute;
+  height: 2px;
+  background-color: #4ee1a0;
+  bottom: -1rem;
+  left: 0;
+  transition: 0.3s;
+}
+.project__href2 a:hover {
+  color: #4ee1a0;
+}
+.project__href2 a:hover::after {
+  width: 100%;
+}
+
+.project__box2:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("../images/haha3.png");
+}
+
+.project__box2:hover .project__href2 {
+  display: flex;
+}
+
+.project__item3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project__box3 {
+  width: 540px;
+  height: 400px;
+  background-image: url("../images/haha4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project__href3 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 4.8rem;
+  display: none;
+}
+.project__href3 a {
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+}
+.project__href3 a:after {
+  display: inline-block;
+  content: "";
+  width: 0;
+  position: absolute;
+  height: 2px;
+  background-color: #4ee1a0;
+  bottom: -1rem;
+  left: 0;
+  transition: 0.3s;
+}
+.project__href3 a:hover {
+  color: #4ee1a0;
+}
+.project__href3 a:hover::after {
+  width: 100%;
+}
+
+.project__box3:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("../images/haha4.png");
+}
+
+.project__box3:hover .project__href3 {
+  display: flex;
+}
+
+.project__item4 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project__box4 {
+  width: 540px;
+  height: 400px;
+  background-image: url("../images/haha5.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project__href4 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 4.8rem;
+  display: none;
+}
+.project__href4 a {
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+}
+.project__href4 a:after {
+  display: inline-block;
+  content: "";
+  width: 0;
+  position: absolute;
+  height: 2px;
+  background-color: #4ee1a0;
+  bottom: -1rem;
+  left: 0;
+  transition: 0.3s;
+}
+.project__href4 a:hover {
+  color: #4ee1a0;
+}
+.project__href4 a:hover::after {
+  width: 100%;
+}
+
+.project__box4:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("../images/haha5.png");
+}
+
+.project__box4:hover .project__href4 {
+  display: flex;
+}
+
+.project__item5 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project__box5 {
+  width: 540px;
+  height: 400px;
+  background-image: url("../images/haha6.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project__href5 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 4.8rem;
+  display: none;
+}
+.project__href5 a {
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+}
+.project__href5 a:after {
+  display: inline-block;
+  content: "";
+  width: 0;
+  position: absolute;
+  height: 2px;
+  background-color: #4ee1a0;
+  bottom: -1rem;
+  left: 0;
+  transition: 0.3s;
+}
+.project__href5 a:hover {
+  color: #4ee1a0;
+}
+.project__href5 a:hover::after {
+  width: 100%;
+}
+
+.project__box5:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("../images/haha6.png");
+}
+
+.project__box5:hover .project__href5 {
+  display: flex;
+}
+
+.project__type {
+  font-family: Space Grotesk;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: left;
+}
+.project__type .project__description {
+  display: flex;
+  padding-top: 7px;
+  font-family: Space Grotesk;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+  gap: 1.8rem;
+  padding-bottom: 6.9rem;
+}
+.project__type h4 {
+  padding-top: 2rem;
+} /*# sourceMappingURL=style.css.map */

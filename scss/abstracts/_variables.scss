@@ -1,0 +1,170 @@
+$black-color:#151515;
+$green-color:#4EE1A0;
+$black-white-color:#242424;
+$white-color:#ffffff;
+$grey-color:#d9d9d9;
+
+
+$body-ff:'Space Grotesk', sans-serif;
+
+
+
+
+
+// <ul class="project__list">
+//             <li>
+//               <a href="#">
+//                 <img
+//                   class="project__image"
+//                   src="./images/haha1.png"
+//                   alt="picture for frontent "
+//                   width="545.81"
+//                   height="400"
+//                 />
+//               </a>
+//               <h3 class="project__title">DESIGN PORTFOLIO</h3>
+//               <p class="project__description">HTML CSS</p>
+//             </li>
+//             <li>
+//               <a href="#">
+//                 <img
+//                   class="project__image"
+//                   src="./images/haah2.png"
+//                   alt="picture for frontent "
+//                   width="545.81"
+//                   height="400"
+//                 />
+//               </a>
+//               <h3 class="project__title">E-LEARNING LANDING PAGE</h3>
+//               <p class="project__description">HTML CSS</p>
+//             </li>
+//           </ul>
+//           <ul class="project__list1">
+//             <li>
+//               <a href="#">
+//                 <img
+//                   class="project__image"
+//                   src="./images/haha3.png"
+//                   alt="picture for frontent "
+//                   width="545.81"
+//                   height="400"
+//                 />
+//               </a>
+//               <h3 class="project__title">TODO WEB APP</h3>
+//               <p class="project__description">HTML CSS JAVASCRIPT</p>
+//             </li>
+//             <li>
+//               <a href="#">
+//                 <img
+//                   class="project__image"
+//                   src="./images/haha4.png"
+//                   alt="picture for frontent "
+//                   width="545.81"
+//                   height="400"
+//                 />
+//               </a>
+//               <h3 class="project__title">ENTERTAINMENT WEB APP</h3>
+//               <p class="project__description">HTML CSS JAVASCRIPT</p>
+//             </li>
+//           </ul>
+//           <ul class="project__list2">
+//             <li>
+//               <a href="#">
+//                 <img
+//                   class="project__image"
+//                   src="./images/haha5.png"
+//                   alt="picture for frontent "
+//                   width="545.81"
+//                   height="400"
+//                 />
+//               </a>
+//               <h3 class="project__title">MEMORY GAME</h3>
+//               <p class="project__description">HTML CSS JAVASCRIPT</p>
+//             </li>
+//             <li>
+//               <a href="#">
+//                 <img
+//                   class="project__image"
+//                   src="./images/haha6.png"
+//                   alt="picture for frontent "
+//                   width="545.81"
+//                   height="400"
+//                 />
+//               </a>
+//               <h3 class="project__title">ART GALLERY SHOWCASE</h3>
+//               <p class="project__description">HTML CSS JAVASCRIPT</p>
+//             </li>
+//           </ul>
+//        
+
+
+
+
+
+
+// .project__man {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     text-align: center;
+//   }
+//   .project__mi {
+//     font-size: 88px;
+//     font-weight: 700;
+//     line-height: 1;
+//     letter-spacing: -2.5px;
+//     text-align: left;
+//   }
+//   .project__content {
+//     color: $white-color;
+  
+//     &:hover {
+//       color: $green-color;
+//     }
+  
+//     &__hr {
+//       width: 105px;
+//       color: $green-color;
+//     }
+//   }
+  
+//   .project__container {
+//     padding-top: 14rem;
+//   }
+//   .project__list {
+//     display: flex;
+//     justify-content: space-between;
+//     padding-top: 8rem;
+//     padding-bottom: 6.9rem;
+//   }
+  
+//   .project__list1 {
+//     padding-bottom: 6.9rem;
+//     display: flex;
+//     justify-content: space-between;
+//   }
+  
+//   .project__list2 {
+//     padding-bottom: 6.9rem;
+//     display: flex;
+//     justify-content: space-between;
+//   }
+  
+//   .project__image {
+//   }
+//   .project__title {
+//     font-family: Space Grotesk;
+//     font-size: 24px;
+//     font-weight: 700;
+//     line-height: 1.3;
+//     text-align: left;
+//   }
+//   .project__description {
+//     padding-bottom: 6.9rem;
+//     font-family: Space Grotesk;
+//     font-size: 18px;
+//     font-weight: 500;
+//     line-height: 1.5;
+//     text-align: left;
+//   }
+  

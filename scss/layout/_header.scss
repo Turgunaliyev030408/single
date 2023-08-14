@@ -1,0 +1,122 @@
+.header {
+}
+
+.header__container {
+  align-items: center;
+  padding-top: 3.9rem;
+  padding-bottom: 3.9rem;
+}
+
+.site__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site__name {
+  color: $white-color;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+}
+.sitenav {
+  max-width: 192.49px;
+}
+.sitenav__list {
+  display: flex;
+  gap: 3.2rem;
+  margin-right: 29.5px;
+  li {
+    width: 24px;
+    height: 24px;
+    a {
+      margin-left: -29.5px;
+    }
+  }
+}
+
+.hero {
+  padding-top: 12.7rem;
+  display: flex;
+}
+.hero__title {
+  display: flex;
+}
+
+.hero__list {
+  
+  flex-direction: column;
+  h2 {
+    width: 70.9rem;
+    font-family: Space Grotesk;
+    font-size: 88px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -2.5px;
+    text-align: left;
+  }
+
+  a {
+    color: #ffffff;
+    hr {
+      color: $green-color;
+    }
+  }
+
+  a:hover {
+    color: $green-color;
+  }
+}
+
+.hero__adam {
+  font-family: Space Grotesk;
+  font-size: 88px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -2.5px;
+  text-align: left;
+  display: flex;
+  gap: 1.7rem;
+}
+.hero__hr {
+  max-width: 492px;
+  margin-left: 13.7rem;
+  background-color: $green-color;
+  flex-shrink: 0;
+  height: 6px;
+  border: none;
+}
+.hero__description {
+  width: 44.5rem;
+  padding-top: 4.3rem;
+  font-family: Space Grotesk;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+  padding-bottom: 6.6rem;
+}
+.hero__image {
+  display: flex;
+  width: 44.5rem;
+  height: 720px;
+  flex-shrink: 0;
+  background-color: $black-white-color;
+  position: relative;
+  z-index: -1;
+  margin-top: -200px;
+  margin-left: -45px;
+
+  .site__img {
+    position: absolute;
+    z-index: 1;
+    bottom: -1px;
+    bottom: 0;
+  }
+
+  .circle__picture {
+    position: absolute;
+    bottom: 10.9rem;
+    left: -64.5px;
+    z-index: 1;
+  }
+}
