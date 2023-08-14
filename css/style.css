@@ -1,4 +1,4 @@
-/* ! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -73,7 +73,7 @@ abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted; /* 2 */
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -153,8 +153,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -163,8 +162,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -172,9 +170,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -182,9 +180,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -193,9 +191,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -239,8 +237,8 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type="checkbox"],
-[type="radio"] {
+[type=checkbox],
+[type=radio] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
@@ -248,8 +246,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -257,7 +255,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
+[type=search] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
@@ -265,7 +263,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -327,7 +325,7 @@ html {
 img {
   display: flex;
   -o-object-fit: cover;
-  object-fit: cover; /* contain */
+     object-fit: cover; /* contain */
 }
 
 a {
@@ -454,10 +452,10 @@ body {
   color: #ffffff;
 }
 .hero__list a hr {
-  color: #4ee1a0;
+  color: #4EE1A0;
 }
 .hero__list a:hover {
-  color: #4ee1a0;
+  color: #4EE1A0;
 }
 
 .hero__adam {
@@ -474,7 +472,7 @@ body {
 .hero__hr {
   max-width: 492px;
   margin-left: 13.7rem;
-  background-color: #4ee1a0;
+  background-color: #4EE1A0;
   flex-shrink: 0;
   height: 6px;
   border: none;
@@ -586,13 +584,13 @@ body {
   color: #fff;
 }
 .contact__message a:hover {
-  color: #4ee1a0;
+  color: #4EE1A0;
 }
 
 .contact__hr {
   width: 12rem;
   height: 0.3rem;
-  background-color: #4ee1a0;
+  background-color: #4EE1A0;
   border: none;
 }
 
@@ -615,85 +613,6 @@ body {
 }
 .message__link1 {
   color: #d9d9d9;
-  padding-top: 3.2rem;
-  color: #ffffff;
-  padding-bottom: 8.1rem;
-}
-
-.message__link:first-child {
-  padding-top: 1rem;
-}
-
-.message__container {
-  background-color: #242424;
-  padding-top: 8.4rem;
-  display: flex;
-  justify-content: space-between;
-}
-
-.message__left {
-  padding-right: 22rem;
-}
-
-.message__contact {
-  font-family: Space Grotesk;
-  font-size: 88px;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: -2.5px;
-}
-
-.message__description {
-  font-family: Space Grotesk;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.5;
-  text-align: left;
-  width: 44.5rem;
-  padding-top: 3.6rem;
-  padding-bottom: 22.1rem;
-}
-
-.contact__message {
-  padding-top: 3.2rem;
-}
-.contact__message a {
-  font-family: Space Grotesk;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.625;
-  text-align: left;
-  color: #fff;
-}
-.contact__message a:hover {
-  color: #4ee1a0;
-}
-
-.contact__hr {
-  width: 12rem;
-  height: 0.3rem;
-  background-color: #4ee1a0;
-  border: none;
-}
-
-.link__hr {
-  width: 44.5rem;
-  color: #ffffff;
-}
-
-.message__link {
-  font-family: Space Grotesk;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  text-align: left;
-  color: #fff;
-  padding-top: 3.2rem;
-  padding-bottom: 1.6rem;
-  display: block;
-  color: #ffffff;
-}
-.message__link1 {
   padding-top: 3.2rem;
   color: #ffffff;
   padding-bottom: 8.1rem;
@@ -721,10 +640,10 @@ main {
   padding-bottom: 25rem;
 }
 .main__link:hover {
-  color: #4ee1a0;
+  color: #4EE1A0;
 }
 .main__link__hr {
-  color: #4ee1a0;
+  color: #4EE1A0;
 }
 
 .frontent__container {
@@ -732,6 +651,11 @@ main {
 }
 
 .frontent__list {
+  padding-top: 7.2rem;
+  display: flex;
+}
+
+.frontent__list1 {
   display: flex;
 }
 
@@ -747,7 +671,6 @@ main {
   line-height: 1.16;
   letter-spacing: -1.5px;
   text-align: left;
-  padding-top: 5.8rem;
 }
 
 .frontent__description {
@@ -755,10 +678,7 @@ main {
   font-weight: 500;
   line-height: 1.5;
   text-align: left;
-}
-
-.project__container {
-  padding-top: 14rem;
+  padding-bottom: 5rem;
 }
 
 .project__item {
@@ -776,6 +696,7 @@ main {
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  padding-top: 8rem;
 }
 
 .project__mi {
@@ -790,11 +711,11 @@ main {
   color: #ffffff;
 }
 .project__content:hover {
-  color: #4ee1a0;
+  color: #4EE1A0;
 }
 .project__content__hr {
   width: 105px;
-  color: #4ee1a0;
+  color: #4EE1A0;
 }
 
 .project__item {
@@ -833,21 +754,20 @@ main {
   width: 0;
   position: absolute;
   height: 2px;
-  background-color: #4ee1a0;
+  background-color: #4EE1A0;
   bottom: -1rem;
   left: 0;
   transition: 0.3s;
 }
 .project__href a:hover {
-  color: #4ee1a0;
+  color: #4EE1A0;
 }
 .project__href a:hover::after {
   width: 100%;
 }
 
 .project__box:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url("../images/haha1.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../images/haha1.png");
 }
 
 .project__box:hover .project__href {
@@ -888,21 +808,20 @@ main {
   width: 0;
   position: absolute;
   height: 2px;
-  background-color: #4ee1a0;
+  background-color: #4EE1A0;
   bottom: -1rem;
   left: 0;
   transition: 0.3s;
 }
 .project__href1 a:hover {
-  color: #4ee1a0;
+  color: #4EE1A0;
 }
 .project__href1 a:hover::after {
   width: 100%;
 }
 
 .project__box1:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url("../images/haah2.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../images/haah2.png");
 }
 
 .project__box1:hover .project__href1 {
@@ -943,21 +862,20 @@ main {
   width: 0;
   position: absolute;
   height: 2px;
-  background-color: #4ee1a0;
+  background-color: #4EE1A0;
   bottom: -1rem;
   left: 0;
   transition: 0.3s;
 }
 .project__href2 a:hover {
-  color: #4ee1a0;
+  color: #4EE1A0;
 }
 .project__href2 a:hover::after {
   width: 100%;
 }
 
 .project__box2:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url("../images/haha3.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../images/haha3.png");
 }
 
 .project__box2:hover .project__href2 {
@@ -998,21 +916,20 @@ main {
   width: 0;
   position: absolute;
   height: 2px;
-  background-color: #4ee1a0;
+  background-color: #4EE1A0;
   bottom: -1rem;
   left: 0;
   transition: 0.3s;
 }
 .project__href3 a:hover {
-  color: #4ee1a0;
+  color: #4EE1A0;
 }
 .project__href3 a:hover::after {
   width: 100%;
 }
 
 .project__box3:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url("../images/haha4.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../images/haha4.png");
 }
 
 .project__box3:hover .project__href3 {
@@ -1053,21 +970,20 @@ main {
   width: 0;
   position: absolute;
   height: 2px;
-  background-color: #4ee1a0;
+  background-color: #4EE1A0;
   bottom: -1rem;
   left: 0;
   transition: 0.3s;
 }
 .project__href4 a:hover {
-  color: #4ee1a0;
+  color: #4EE1A0;
 }
 .project__href4 a:hover::after {
   width: 100%;
 }
 
 .project__box4:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url("../images/haha5.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../images/haha5.png");
 }
 
 .project__box4:hover .project__href4 {
@@ -1108,21 +1024,20 @@ main {
   width: 0;
   position: absolute;
   height: 2px;
-  background-color: #4ee1a0;
+  background-color: #4EE1A0;
   bottom: -1rem;
   left: 0;
   transition: 0.3s;
 }
 .project__href5 a:hover {
-  color: #4ee1a0;
+  color: #4EE1A0;
 }
 .project__href5 a:hover::after {
   width: 100%;
 }
 
 .project__box5:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url("../images/haha6.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../images/haha6.png");
 }
 
 .project__box5:hover .project__href5 {
@@ -1149,4 +1064,4 @@ main {
 }
 .project__type h4 {
   padding-top: 2rem;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -29,7 +29,12 @@ main {
 }
 
 .frontent__list {
+  padding-top: 7.2rem;
   display: flex;
+}
+
+.frontent__list1{
+display: flex;
 }
 .frontent__item {
   width: 100%;
@@ -43,19 +48,19 @@ main {
   line-height: 1.16;
   letter-spacing: -1.5px;
   text-align: left;
-  padding-top: 5.8rem;
+  
 }
 .frontent__description {
   font-size: 18px;
   font-weight: 500;
   line-height: 1.5;
   text-align: left;
-  padding-bottom: 14rem;
+  padding-bottom: 5rem;
 }
 
 .project__container {
-  padding-top: 14rem;
 }
+
 
 .project__item {
   padding-top: 8rem;
@@ -72,7 +77,7 @@ main {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  // padding-top: 14rem;
+  padding-top: 8rem;
 }
 .project__mi {
   font-size: 88px;
